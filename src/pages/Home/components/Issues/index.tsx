@@ -1,5 +1,5 @@
 import { IssueCard } from "../IssueCard";
-import { SearchForm } from "../SearchForm";
+import { SearchBar } from "../SearchBar";
 import { IssuesContainer } from "./styles";
 
 export function Issues() {
@@ -9,7 +9,7 @@ export function Issues() {
         <h2>Publicações</h2>
         <span>6 publicações</span>
       </div>
-      <SearchForm />
+      <SearchBar />
       <div>
         <IssueCard />
         <IssueCard />

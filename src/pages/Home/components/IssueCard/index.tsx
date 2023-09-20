@@ -8,7 +8,7 @@ export function IssueCard() {
     <IssueCardContainer>
       <Link to={`/issue/${issueNumber}`}>
         <header>
-          <h3>Título da Issue</h3>
+          <h3>Título da Issue Maior para ver o que acontece</h3>
           <span>Há 1 dia</span>
         </header>
         <p>

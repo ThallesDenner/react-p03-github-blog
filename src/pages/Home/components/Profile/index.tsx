@@ -8,15 +8,14 @@ export function Profile() {
       <div>
         <div>
           <h1>Usuário do Github</h1>
-          <a href="https://github.com/ThallesDenner">
+          <a href="https://github.com/ThallesDenner" target="_blank">
             GITHUB <ArrowSquareOut size={12} weight="bold" />
           </a>
         </div>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
           reiciendis officia deleniti nobis nostrum rerum aliquam enim excepturi
-          et. Doloremque animi excepturi qui nisi nostrum, laboriosam incidunt
-          quisquam quod tempora.
+          et.
         </p>
         <div>
           <span>

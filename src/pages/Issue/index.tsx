@@ -16,13 +16,13 @@ export function Issue() {
         <header>
           <nav>
             <Link to="/">
-              <CaretLeft size={12} /> Voltar
+              <CaretLeft size={12} /> VOLTAR
             </Link>
-            <a href="">
+            <a href="https://github.com/ThallesDenner" target="_blank">
               VER NO GITHUB <ArrowSquareOut size={12} weight="bold" />
             </a>
           </nav>
-          <h1>Título da Issue</h1>
+          <h1>Título da Issue Maior para ver o que acontece</h1>
           <div>
             <span>
               <GithubLogo size={18} weight="fill" /> usuário
