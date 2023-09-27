@@ -8,7 +8,7 @@ export const ProfileContainer = styled.section`
   gap: 2rem;
   padding: 2rem;
   border-radius: 10px;
-  background-color: ${(props) => props.theme["base-profile"]};
+  background-color: ${(props) => props.theme.colors["base-profile"]};
   box-shadow: 0px 2px 28px 0px rgba(0, 0, 0, 0.2);
 
   img {
@@ -23,8 +23,8 @@ export const ProfileContainer = styled.section`
     justify-content: space-between;
 
     h1 {
-      color: ${(props) => props.theme["base-title"]};
-      font-size: 1.5rem;
+      color: ${(props) => props.theme.colors["base-title"]};
+      font-size: ${(props) => props.theme.fontSizes["fs-24"]};
       font-weight: 700;
       line-height: 1.3;
     }
@@ -34,10 +34,10 @@ export const ProfileContainer = styled.section`
       display: flex;
       align-items: baseline;
       gap: 0.5rem;
-      color: ${(props) => props.theme["blue"]};
+      color: ${(props) => props.theme.colors["blue"]};
       border-top: 1px solid transparent;
       border-bottom: 1px solid transparent;
-      font-size: 0.75rem;
+      font-size: ${(props) => props.theme.fontSizes["fs-12"]};
       font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
@@ -45,7 +45,7 @@ export const ProfileContainer = styled.section`
     }
 
     a:hover {
-      border-bottom: 1px solid ${(props) => props.theme["blue"]};
+      border-bottom: 1px solid ${(props) => props.theme.colors["blue"]};
     }
   }
 
@@ -56,18 +56,19 @@ export const ProfileContainer = styled.section`
 
   & > div > div:last-child {
     display: flex;
-    justify-content: space-between;
-    /* gap: 1.5rem; */
+    /* justify-content: space-between; */
+    gap: 1.5rem;
 
     span {
       /* height: 1.6rem;  // line-height * font-size  */
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 0.5rem;
-      color: ${(props) => props.theme["base-subtitle"]};
+      color: ${(props) => props.theme.colors["base-subtitle"]};
 
       svg {
-        color: ${(props) => props.theme["base-label"]};
+        color: ${(props) => props.theme.colors["base-label"]};
       }
     }
   }

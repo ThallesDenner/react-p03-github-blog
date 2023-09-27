@@ -1,22 +1,28 @@
 import { Link } from "react-router-dom";
+import { IssueCardType } from "../Issues";
+import { extractTimeRange, formatDateTime } from "../../../../utils/formatter";
 import { IssueCardContainer } from "./styles";
 
-export function IssueCard() {
-  const issueNumber = 1;
+interface IssueCardProps {
+  issue: IssueCardType;
+}
+
+export function IssueCard({ issue }: IssueCardProps) {
+  const { number, title, content, createdAt } = issue;
 
   return (
     <IssueCardContainer>
-      <Link to={`/issue/${issueNumber}`}>
+      <Link to={`/issue/${number}`}>
         <header>
-          <h3>Título da Issue Maior para ver o que acontece</h3>
-          <span>Há 1 dia</span>
+          <h3>{title}</h3>
+          <time
+            title={formatDateTime(createdAt)}
+            dateTime={createdAt.toISOString()}
+          >
+            {extractTimeRange(createdAt)}
+          </time>
         </header>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
-          perferendis facilis sapiente consequuntur dicta sed dolores debitis
-          laudantium veniam! Obcaecati sint officia ipsam culpa sapiente quasi
-          sunt similique nulla voluptates?
-        </p>
+        <p>{content}</p>
       </Link>
     </IssueCardContainer>
   );

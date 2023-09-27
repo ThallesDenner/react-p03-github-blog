@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
   height: 18.5rem;
   text-align: center;
   background-image: url(${headerBackground});
-  background-color: ${(props) => props.theme["base-profile"]};
+  background-color: ${(props) => props.theme.colors["base-profile"]};
 
   img {
     margin-top: 3.75rem;

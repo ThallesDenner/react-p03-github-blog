@@ -9,24 +9,24 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: none;
-    /* border: 1px solid ${(props) => props.theme["blue"]}; */
-    box-shadow: 0 0 0 1px ${(props) => props.theme["blue"]};
+    /* border: 1px solid ${(props) => props.theme.colors["blue"]}; */
+    box-shadow: 0 0 0 1px ${(props) => props.theme.colors["blue"]};
   }
 
   ::placeholder {
-    color: ${(props) => props.theme["base-label"]};
+    color: ${(props) => props.theme.colors["base-label"]};
   }
 
   body {
-    background-color: ${(props) => props.theme["base-background"]};
-    color: ${(props) => props.theme["base-text"]};
+    background-color: ${(props) => props.theme.colors["base-background"]};
+    color: ${(props) => props.theme.colors["base-text"]};
     -webkit-font-smoothing: antialiased;
   }
 
   body, button, input {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: ${(props) => props.theme.fontSizes["fs-16"]};
     line-height: 1.6;
   }
 
